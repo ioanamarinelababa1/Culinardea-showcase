@@ -61,6 +61,8 @@ Work in progress (full implementation available in a private repository)
 - Warm color palette
 - Structured layout for intuitive navigation
 - Focus on user-friendly experience
+- 3D effect
+- Split Login Page Transition
 
 ---
 
