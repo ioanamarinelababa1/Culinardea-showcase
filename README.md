@@ -40,12 +40,6 @@ Work in progress (full implementation available in a private repository)
 - Basic protection against common vulnerabilities
 - Enforcing HTTPS for all communications
 - Implementing secure authentication flows (JWT / session-based)
-- Two-Factor Authentication (2FA)
-- Secure API design and protection against common attacks
-- Input validation and sanitization
-- Protection against SQL Injection and XSS attacks
-- Secure storage of sensitive data (environment variables, secrets)
-- Rate limiting and brute-force protection
 
 ---
 
@@ -54,6 +48,12 @@ Work in progress (full implementation available in a private repository)
 - Identifying and mitigating common vulnerabilities (OWASP Top 10)
 - Improving API security and access control mechanisms
 - Enhancing overall application security posture
+- Two-Factor Authentication (2FA)
+- Secure API design and protection against common attacks
+- Input validation and sanitization
+- Protection against SQL Injection and XSS attacks
+- Secure storage of sensitive data (environment variables, secrets)
+- Rate limiting and brute-force protection
 
 ---
 ## 🎨 UI / UX
@@ -77,7 +77,7 @@ Work in progress (full implementation available in a private repository)
 
 ---
 
-## 💬 Feedback System
+## 💬 System
 Users can:
 - Send reviews
 - Report bugs or issues
@@ -86,10 +86,11 @@ Users can:
 - Add recipes to Tried section
 - Add their own recipes with images into a separate window, like a digital cooking book
 - Add tips
+- Check out season's fruits, vegetables
   
 ---
 
-## 🚀 Future Improvements
+## 🚀 Next Improvements
 - Advanced search functionality
 - AI-based recipe suggestions
 - Performance optimization
