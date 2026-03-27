@@ -31,6 +31,7 @@ Work in progress (full implementation available in a private repository)
 - Account deletion with complete data removal
 - Feedback & issue reporting system
 - Responsive UI with custom design (header, footer, layout)
+- responsive design complet
 
 ---
 
