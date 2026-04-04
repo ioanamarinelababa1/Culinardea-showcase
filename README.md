@@ -21,6 +21,9 @@ Work in progress (full implementation available in a private repository)
 - Cloudflare Turnstile (bot protection)
 - VS Code (programming)
 - Dynamic recipe catalog via Supabase (migrated from static JavaScript)
+- Node.js + Express (backend API server, port 3001)
+- Nodemailer (email service — configured)
+- dotenv (environment variables management)
 
 ---
 
