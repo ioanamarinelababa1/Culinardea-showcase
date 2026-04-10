@@ -1,12 +1,13 @@
-# YourRecipe (Showcase)
+# Culinardea (Showcase)
 
 ## Overview
-YourRecipe is a digital cooking journal web application that allows users to explore cooking-related content and create their own personalized recipes and notes.
+Culinardea is a digital cooking journal web application that allows users to explore cooking-related content and create their own personalized recipes and notes.
 
 The application focuses on usability, data persistence, and security, offering users a structured and interactive way to manage their cooking ideas.
 
 ## Status
 Work in progress (full implementation available in a private repository)
+see: https://culinardea.app/
 
 ---
 
@@ -38,6 +39,7 @@ Work in progress (full implementation available in a private repository)
 - Responsive design complet
 - Admin image management — upload or replace recipe images via URL or file upload, persisted in Supabase Storage
 - Recipes loaded dynamically from Supabase PostgreSQL with local fallback
+- Professional email routing via ImprovMX — contact@culinardea.app forwards to dedicated inbox
 
 ---
 
@@ -140,6 +142,13 @@ Work in progress (full implementation available in a private repository)
 
 ---
 
+## Infrastructure
+- Custom domain deployed: culinardea.app (Vercel + Namecheap)
+- Professional email 
+- HTTPS enforced automatically via Vercel
+
+---
+
 ## What I’m Learning
 - Full-stack web development fundamentals
 - Authentication & security best practices
@@ -192,4 +201,4 @@ Users can:
 ## Note
 The full source code is maintained in a private repository for security and intellectual property protection.
 
-© 2026 YourRecipe. 
+© 2026 Culinardea. 
