@@ -1,4 +1,6 @@
 # Culinardea (Showcase)
+## ! For branding point of viwe I renamed the app from YourRecipe to Culinardea.
+
 
 ## Overview
 Culinardea is a digital cooking journal web application that allows users to explore cooking-related content and create their own personalized recipes and notes.
