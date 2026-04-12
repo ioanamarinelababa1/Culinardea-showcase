@@ -1,11 +1,11 @@
-# Culinardea (Showcase)
+## Culinardea – Recipe Discovery Web App
 
-## Overview
-Culinardea is a digital cooking journal web application that allows users to explore cooking-related content and create their own personalized recipes and notes.
+Culinardea is a modern web application designed to help users explore, filter, and interact with recipes through a clean and intuitive interface. Culinardea is a digital cooking journal web application that allows users to explore cooking-related content and create their own personalized recipes and notes.
 
 The application focuses on usability, data persistence, and security, offering users a structured and interactive way to manage their cooking ideas.
 
 ## Status
+
 https://culinardea.app/
 
 ---
