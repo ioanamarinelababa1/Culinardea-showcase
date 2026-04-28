@@ -32,26 +32,6 @@ Culinardea focuses on simplicity, usability, and fast interaction to improve the
 
 ---
 
-## Running Locally
-
-### With Docker (recommended):
-1. Install Docker Desktop
-2. cd ~/Desktop/Culinardea
-3. docker build -t culinardea .
-4. docker run -d -p 8090:8090 -p 3007:3007 --name culinardea-app culinardea
-5. Open http://localhost:8090
-
-### Without Docker:
-1. npm install
-2. Terminal 1 — Frontend: node server.js (port 8090)
-3. Terminal 2 — Backend: npm run server (port 3007)
-4. Open http://localhost:8090
-
-### Rebuild after changes:
-docker stop culinardea-app && docker rm culinardea-app && docker build -t culinardea . && docker run -d -p 8090:8090 -p 3007:3007 --name culinardea-app culinardea
-
----
-
 ## Screenshots of the app working and layout
 
 <img width="1376" height="768" alt="presentation_image3" src="https://github.com/user-attachments/assets/7ba9f8c6-8589-49f9-be70-0723fcbddd80" />
@@ -70,9 +50,8 @@ docker stop culinardea-app && docker rm culinardea-app && docker build -t culina
 - Feedback & issue reporting system
 - Responsive UI with custom design (header, footer, layout)
 - Responsive design complet
-- Admin image management — upload or replace recipe images via URL or file upload, persisted in Supabase Storage
 - Recipes loaded dynamically from Supabase PostgreSQL with local fallback
-- Professional email routing via ImprovMX — contact@culinardea.app forwards to dedicated inbox
+- Professional email — contact@culinardea.app 
 
 ---
 
@@ -84,7 +63,7 @@ docker stop culinardea-app && docker rm culinardea-app && docker build -t culina
 - Secure email change — confirmation required on both addresses
 - Secure password change — recent session required
 - Password reset via signed email link
-- Account selector forced at every Google login (prompt: select_account)
+- Account selector forced at every Google login 
 
 ### Password Security
 - Password strength checker — 5 levels: WEAK → MEDIUM → GOOD → STRONG → FORTRESS
@@ -94,12 +73,12 @@ docker stop culinardea-app && docker rm culinardea-app && docker build -t culina
 - Weak pattern detection (repetitions, sequences, keyboard patterns)
 
 ### Anti-Abuse & Bot Protection
-- Cloudflare Turnstile — anti-bot protection (active on HTTPS deployment)
-- Rate limiting with exponential backoff: 3 fails → 15s, 5 fails → 5min, 10 fails → 30min
+- Cloudflare Turnstile — anti-bot protection
+- Rate limiting with exponential backoff
 - Supabase Attack Protection enabled
 
 ### Database Security
-- Row Level Security (RLS) enforced on all 12 PostgreSQL tables
+- Row Level Security (RLS) enforced on all PostgreSQL tables
 - Each user accesses exclusively their own data
 - Automatic profile creation via database trigger
 - Cascade delete — complete data removal on account deletion
@@ -108,13 +87,12 @@ docker stop culinardea-app && docker rm culinardea-app && docker build -t culina
 - Recipe images protected by RLS — only admin can upload, update or delete images
 - Secure storage of sensitive data (environment variables, secrets)
 
-
 ### Frontend Security
-- XSS protection: escapeHTML() global sanitizer on all user inputs
-- Tips sanitizer: strict whitelist (only strong, em, br tags permitted)
-- URL validation: only https:// permitted — blocks javascript:, data:, vbscript:
+- XSS protection: global sanitizer on all user inputs
+- Tips sanitizer: strict whitelist 
+- URL validation: only https:// permitted 
 - Zero sensitive data in localStorage
-- Local HTTP server (Node.js) replacing insecure file:// protocol
+- Local HTTP server replacing insecure file:// protocol
 
 ### Legal & Compliance
 - GDPR compliant: Privacy Policy, Terms & Conditions, Cookie Policy
@@ -123,27 +101,24 @@ docker stop culinardea-app && docker rm culinardea-app && docker build -t culina
 - Data operator identified (Art. 13 GDPR)
 - Data retention periods documented
 - User rights documented and accessible (access, rectification, deletion, portability)
-- Supabase declared as third-party EU data processor (West EU, Ireland)
 
 ---
 
 ## Backend Architecture
 
-- Supabase service key secured in server/.env — never exposed to browser
+- Supabase service key secured 
 - Routes: /api/auth, /api/recipes, /api/email
 - Middleware: rate limiting, admin-only protection
-- Recipes loaded via backend API — not directly from browser
-- Health check endpoint: GET /api/status
+- Recipes loaded via backend API 
 
 ---
 
 ### Backend & API Security
-- Backend API layer (Node.js + Express) separating frontend from database
+- Backend API layer separating frontend from database
 - Admin-only middleware protecting sensitive endpoints
-- Server-side rate limiting via express-rate-limit (5 req/15min login, 100 req/15min general)
+- Server-side rate limiting via express-rate-limit (5 req/15min login, 100 req/15min general, and so on)
 - CORS configured to accept only trusted origins
-- Helmet.js security headers on all API responses
-
+  
 ---
 
 ## Advanced Security (Planned)
@@ -173,26 +148,6 @@ docker stop culinardea-app && docker rm culinardea-app && docker build -t culina
 - 3D effect
 - Split Login Page Transition
 
----
-
-## Infrastructure
-- Custom domain deployed: culinardea.app (Vercel + Namecheap)
-- Professional email 
-- HTTPS enforced automatically via Vercel
-
----
-
-## System
-Users can:
-- Send reviews
-- Report bugs or issues
-- Suggest improvements
-- Add recipes to Favorites section
-- Add recipes to Tried section
-- Add their own recipes with images into a separate window, like a digital cooking book
-- Add tips
-- Check out season's fruits, vegetables
-  
 ---
 
 ## Database Architecture
